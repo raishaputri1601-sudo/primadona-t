@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primadona(T) | Donat Istimewa</title>
+  <style>
+    :root { --pink:#f7dce7; --pink-dark:#b85d80; --cream:#fffaf7; --ink:#49343c; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial, sans-serif; background:var(--cream); color:var(--ink); }
+    header { background:var(--pink); text-align:center; padding:34px 18px 28px; }
+    .brand { margin:0; color:var(--pink-dark); font-family:Georgia,serif; font-size:clamp(38px,8vw,58px); }
+    .sub { margin:8px 0 0; letter-spacing:3px; font-size:12px; }
+    .tagline { margin:18px 0 0; font-family:Georgia,serif; font-style:italic; }
+    main { width:min(900px,92%); margin:28px auto 50px; }
+    .hero { text-align:center; padding:24px 14px 30px; }
+    .donut { width:170px; height:170px; border-radius:50%; margin:4px auto 22px; position:relative;
+      background:radial-gradient(circle at center, var(--cream) 0 24%, transparent 25%), #c98b55;
+      box-shadow:inset -9px -10px 0 #a96b3f, 0 10px 22px #5b3b2922; }
+    .donut:before { content:""; position:absolute; inset:10px; border-radius:50%;
+      background:#f0b6c9; clip-path:polygon(0 0,100% 0,100% 48%,90% 52%,100% 61%,100% 100%,0 100%); }
+    .donut:after { content:""; position:absolute; width:55px; height:55px; border-radius:50%;
+      background:var(--cream); left:57px; top:57px; box-shadow:inset 3px 3px 0 #eadbd5; }
+    h2 { color:var(--pink-dark); font-family:Georgia,serif; font-size:30px; margin:8px 0; }
+    .intro { max-width:570px; margin:10px auto; line-height:1.7; }
+    .section { background:white; border:1px solid #f1e2e7; border-radius:18px; padding:22px; margin:18px 0; }
+    .section h3 { margin:0 0 15px; color:var(--pink-dark); font-family:Georgia,serif; font-size:23px; }
+    .flavors { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+    .flavor { background:#fff7fa; border-radius:12px; padding:15px; text-align:center; }
+    .flavor strong { display:block; margin-bottom:5px; }
+    .flavor span { font-size:13px; color:#806b73; }
+    ul { padding-left:20px; line-height:1.8; margin-bottom:0; }
+    footer { text-align:center; background:var(--pink); padding:22px 12px; color:#805064; font-size:13px; }
+    @media(max-width:480px) { .flavors { grid-template-columns:1fr 1fr; } .section { padding:18px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="brand">Primadona(T)</h1>
+    <p class="sub">DONAT ISTIMEWA</p>
+    <p class="tagline">“Always the Star of Your Sweet Moment.”</p>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="donut" aria-label="Ilustrasi donat sederhana"></div>
+      <h2>Manisnya Bikin Jatuh Hati!</h2>
+      <p class="intro">Kenalan dengan Primadona(T), donat sederhana yang cocok menemani waktu santai dan membuat momen kecil terasa lebih manis.</p>
+    </section>
+    <section class="section">
+      <h3>Tentang Primadona(T)</h3>
+      <p>Primadona(T) adalah merek donat untuk tugas sekolah. Kami menghadirkan donat dengan tampilan sederhana, rasa manis, dan pilihan topping yang disukai banyak orang.</p>
+    </section>
+    <section class="section">
+      <h3>Varian Rasa</h3>
+      <div class="flavors">
+        <div class="flavor"><strong>Cokelat</strong><span>Manis dengan rasa cokelat.</span></div>
+        <div class="flavor"><strong>Stroberi</strong><span>Sentuhan rasa buah yang manis.</span></div>
+        <div class="flavor"><strong>Keju</strong><span>Perpaduan gurih dan manis.</span></div>
+        <div class="flavor"><strong>Tiramisu</strong><span>Rasa lembut dengan aroma kopi.</span></div>
+      </div>
+    </section>
+    <section class="section">
+      <h3>Informasi Produk</h3>
+      <ul>
+        <li><strong>Produk:</strong> Donat</li>
+        <li><strong>Bahan utama (contoh):</strong> Tepung terigu, gula, telur, susu, ragi, dan margarin.</li>
+        <li><strong>Penyajian:</strong> Cocok dinikmati sebagai camilan.</li>
+        <li><strong>Penyimpanan:</strong> Simpan dalam wadah tertutup dan nikmati selagi segar.</li>
+      </ul>
+      <p style="font-size:12px;color:#806b73;margin-top:14px;">Catatan: Informasi dan varian di halaman ini merupakan contoh fiktif untuk keperluan tugas sekolah.</p>
+    </section>
+  </main>
+  <footer>Primadona(T) · Selalu jadi bintang di momen manismu.</footer>
+</body>
+</html>
